@@ -17,34 +17,65 @@
       background-color: #f1f5f9;
       flex-direction: column;
       text-align: center;
-      box-sizing: border-box;
     }
 
     .logo {
-      width: 500px;  /* Logo size set to 500px */
-      margin: 0;  /* Remove any margin */
+      width: 100%;
+      max-width: 500px; /* Set a max-width to make it responsive */
+      height: auto;
+      margin-bottom: 20px; /* Adjusted space between logo and text */
     }
 
     h1 {
       font-size: 2.5rem;
       color: #1e40af;
-      margin: 0;  /* Remove default margin from h1 */
+      margin-bottom: 10px; /* Reduced space between title and text */
     }
 
     p {
       font-size: 1.2rem;
       color: #6b7280;
-      margin: 10px 0 0 0;  /* Remove margin-top and adjust margin for the paragraph */
+      margin-top: 0;
+    }
+
+    /* Add responsiveness */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem; /* Adjust heading size on smaller screens */
+      }
+
+      p {
+        font-size: 1rem; /* Adjust paragraph size on smaller screens */
+      }
+
+      .logo {
+        max-width: 80%; /* Logo takes up more space on smaller screens */
+        margin-bottom: 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.8rem; /* Adjust heading for very small screens */
+      }
+
+      p {
+        font-size: 0.9rem; /* Adjust text for very small screens */
+      }
+
+      .logo {
+        max-width: 70%; /* Make the logo even smaller for very small screens */
+      }
     }
   </style>
 </head>
 <body>
 
   <!-- Logo Section -->
-  <img src="assets/logo.png" alt="Logo" class="logo"> <!-- Update the path if needed -->
+  <img src="assets/logo.png" alt="Logo" class="logo">
 
   <!-- Coming Soon Text -->
-  <h1>Coming Soon!</h1>
+  <h1>Coming Soon</h1>
   <p>We are working hard to bring something great for you.</p>
 
 </body>
