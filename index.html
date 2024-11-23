@@ -1,36 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Coming Soon</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon - Uni-Verse</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      margin: 0;
-      background-color: #f4f4f4;
-    }
-    .content {
+      background-color: #f1f5f9;
+      flex-direction: column;
       text-align: center;
+      box-sizing: border-box;
     }
+
+    .logo {
+      width: 500px;  /* Logo size set to 500px */
+      margin: 0;  /* Remove any margin */
+    }
+
     h1 {
-      font-size: 3rem;
-      color: #333;
+      font-size: 2.5rem;
+      color: #1e40af;
+      margin: 0;  /* Remove default margin from h1 */
     }
+
     p {
-      font-size: 1.5rem;
-      color: #666;
+      font-size: 1.2rem;
+      color: #6b7280;
+      margin: 10px 0 0 0;  /* Remove margin-top and adjust margin for the paragraph */
     }
   </style>
 </head>
 <body>
-  <div class="content">
-    <h1>Coming Soon</h1>
-    <p>Our website is under construction. Stay tuned!</p>
-  </div>
+
+  <!-- Logo Section -->
+  <img src="assets/logo.png" alt="Logo" class="logo"> <!-- Update the path if needed -->
+
+  <!-- Coming Soon Text -->
+  <h1>Coming Soon!</h1>
+  <p>We are working hard to bring something great for you.</p>
+
 </body>
 </html>
